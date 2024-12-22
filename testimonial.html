@@ -5,29 +5,71 @@
     <meta charset="utf-8">
     <title>نظرات مشتریان - کافه بلو</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="نظرات مشتریان کافه بلو" name="keywords">
-    <meta content="نظرات مشتریان درباره کافه بلو" name="description">
+    <meta content="کافه بلو" name="keywords">
+    <meta content="کافه بلو" name="description">
 
     <!-- آیکون سایت -->
     <link href="img/favicon.ico" rel="icon">
 
-    <!-- فونت گوگل -->
+    <!-- فونت‌ها -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
     <!-- فونت آوسام -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
-    <!-- استایل کتابخانه‌ها -->
+    <!-- استایل‌های کتابخانه -->
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.theme.default.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
 
-    <!-- استایل سفارشی -->
+    <!-- استایل‌های سفارشی -->
     <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <!-- بخش نظرات شروع -->
+    <!-- شروع نوار ناوبری -->
+    <div class="container-fluid p-0 nav-bar">
+        <nav class="navbar navbar-expand-lg bg-none navbar-dark py-3">
+            <a href="index.html" class="navbar-brand px-lg-4 m-0">
+                <h1 class="m-0 display-4 text-uppercase text-white">کافه بلو</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav mr-auto p-4">
+                    <a href="index.html" class="nav-item nav-link">خانه</a>
+                    <a href="about.html" class="nav-item nav-link">درباره ما</a>
+                    <a href="service.html" class="nav-item nav-link">خدمات</a>
+                    <a href="menu.html" class="nav-item nav-link">منو</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown">صفحات</a>
+                        <div class="dropdown-menu text-capitalize">
+                            <a href="reservation.html" class="dropdown-item">رزرو</a>
+                            <a href="testimonial.html" class="dropdown-item active">نظرات مشتریان</a>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">تماس با ما</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- پایان نوار ناوبری -->
+
+    <!-- شروع سربرگ صفحه -->
+    <div class="container-fluid page-header mb-5 position-relative overlay-bottom">
+        <div class="d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5" style="min-height: 400px">
+            <h1 class="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase">نظرات مشتریان</h1>
+            <div class="d-inline-flex mb-lg-5">
+                <p class="m-0 text-white"><a class="text-white" href="">خانه</a></p>
+                <p class="m-0 text-white px-2">/</p>
+                <p class="m-0 text-white">نظرات مشتریان</p>
+            </div>
+        </div>
+    </div>
+    <!-- پایان سربرگ صفحه -->
+
+    <!-- شروع بخش نظرات -->
     <div class="container-fluid py-5">
         <div class="container">
             <div class="section-title">
@@ -37,65 +79,41 @@
             <div class="owl-carousel testimonial-carousel">
                 <div class="testimonial-item">
                     <div class="d-flex align-items-center mb-3">
-                        <img class="img-fluid rounded-circle" src="img/testimonial-1.jpg" alt="نظر مشتری">
-                        <div class="mr-3">
-                            <h4> احمدی</h4>
+                        <img class="img-fluid" src="img/testimonial-1.jpg" alt="">
+                        <div class="ml-3">
+                            <h4>آرزو احمدی</h4>
                             <i>مشتری وفادار</i>
                         </div>
                     </div>
-                    <p class="m-0">کیفیت قهوه‌ها بی‌نظیر بود و فضای کافه واقعاً دلنشین و آرام بود. حتماً دوباره میام!</p>
+                    <p class="m-0">کیفیت قهوه‌ها بی‌نظیر بود و فضای کافه بسیار دلنشین بود.</p>
                 </div>
                 <div class="testimonial-item">
                     <div class="d-flex align-items-center mb-3">
-                        <img class="img-fluid rounded-circle" src="img/testimonial-2.jpg" alt="نظر مشتری">
-                        <div class="mr-3">
+                        <img class="img-fluid" src="img/testimonial-2.jpg" alt="">
+                        <div class="ml-3">
                             <h4>محمد زمانی</h4>
                             <i>عاشق قهوه</i>
                         </div>
                     </div>
-                    <p class="m-0">برخورد کارکنان بسیار محترمانه بود و منوی متنوع شما عالی بود. سپاسگزارم!</p>
-                </div>
-                <div class="testimonial-item">
-                    <div class="d-flex align-items-center mb-3">
-                        <img class="img-fluid rounded-circle" src="img/testimonial-3.jpg" alt="نظر مشتری">
-                        <div class="mr-3">
-                            <h4>زهرا مرادی</h4>
-                            <i>علاقمند به کافه‌گردی</i>
-                        </div>
-                    </div>
-                    <p class="m-0">یکی از بهترین کافه‌هایی که تا به حال رفتم. قهوه‌ها تازه و خوش‌طعم بودند.</p>
+                    <p class="m-0">برخورد کارکنان بسیار محترمانه بود و منوی متنوع عالی بود!</p>
                 </div>
             </div>
         </div>
     </div>
-    <!-- بخش نظرات پایان -->
+    <!-- پایان بخش نظرات -->
 
-    <!-- کتابخانه‌های جاوااسکریپت -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('.owl-carousel').owlCarousel({
-                loop: true,
-                margin: 10,
-                nav: true,
-                autoplay: true,
-                autoplayTimeout: 5000,
-                autoplayHoverPause: true,
-                responsive: {
-                    0: {
-                        items: 1
-                    },
-                    768: {
-                        items: 2
-                    },
-                    1000: {
-                        items: 3
-                    }
-                }
-            });
-        });
-    </script>
+    <!-- شروع پاورقی -->
+    <div class="container-fluid footer text-white mt-5 pt-5 px-0 position-relative overlay-top">
+        <div class="row mx-0 pt-5 px-sm-3 px-lg-5 mt-4">
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">تماس با ما</h4>
+                <p><i class="fa fa-map-marker-alt mr-2"></i>خیابان انقلاب، ایران</p>
+                <p><i class="fa fa-phone-alt mr-2"></i>09038413711</p>
+                <p class="m-0"><i class="fa fa-envelope mr-2"></i>info@example.com</p>
+            </div>
+        </div>
+    </div>
+    <!-- پایان پاورقی -->
 </body>
 
 </html>
