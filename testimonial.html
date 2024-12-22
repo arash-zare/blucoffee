@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="fa" dir="rtl">
 
 <head>
     <meta charset="utf-8">
@@ -13,14 +13,14 @@
 
     <!-- فونت گوگل -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
     <!-- فونت آوسام -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
     <!-- استایل کتابخانه‌ها -->
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.theme.default.min.css" rel="stylesheet">
 
     <!-- استایل سفارشی -->
     <link href="css/style.min.css" rel="stylesheet">
@@ -37,9 +37,9 @@
             <div class="owl-carousel testimonial-carousel">
                 <div class="testimonial-item">
                     <div class="d-flex align-items-center mb-3">
-                        <img class="img-fluid" src="img/testimonial-1.jpg" alt="نظر مشتری">
-                        <div class="ml-3">
-                            <h4>آرزو احمدی</h4>
+                        <img class="img-fluid rounded-circle" src="img/testimonial-1.jpg" alt="نظر مشتری">
+                        <div class="mr-3">
+                            <h4> احمدی</h4>
                             <i>مشتری وفادار</i>
                         </div>
                     </div>
@@ -47,8 +47,8 @@
                 </div>
                 <div class="testimonial-item">
                     <div class="d-flex align-items-center mb-3">
-                        <img class="img-fluid" src="img/testimonial-2.jpg" alt="نظر مشتری">
-                        <div class="ml-3">
+                        <img class="img-fluid rounded-circle" src="img/testimonial-2.jpg" alt="نظر مشتری">
+                        <div class="mr-3">
                             <h4>محمد زمانی</h4>
                             <i>عاشق قهوه</i>
                         </div>
@@ -57,28 +57,45 @@
                 </div>
                 <div class="testimonial-item">
                     <div class="d-flex align-items-center mb-3">
-                        <img class="img-fluid" src="img/testimonial-3.jpg" alt="نظر مشتری">
-                        <div class="ml-3">
+                        <img class="img-fluid rounded-circle" src="img/testimonial-3.jpg" alt="نظر مشتری">
+                        <div class="mr-3">
                             <h4>زهرا مرادی</h4>
                             <i>علاقمند به کافه‌گردی</i>
                         </div>
                     </div>
                     <p class="m-0">یکی از بهترین کافه‌هایی که تا به حال رفتم. قهوه‌ها تازه و خوش‌طعم بودند.</p>
                 </div>
-                <div class="testimonial-item">
-                    <div class="d-flex align-items-center mb-3">
-                        <img class="img-fluid" src="img/testimonial-4.jpg" alt="نظر مشتری">
-                        <div class="ml-3">
-                            <h4>سینا حسینی</h4>
-                            <i>مشتری خوشحال</i>
-                        </div>
-                    </div>
-                    <p class="m-0">تجربه‌ای فوق‌العاده از طعم قهوه و محیطی دلنشین. حتماً پیشنهاد می‌کنم!</p>
-                </div>
             </div>
         </div>
     </div>
     <!-- بخش نظرات پایان -->
+
+    <!-- کتابخانه‌های جاوااسکریپت -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                autoplayHoverPause: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    768: {
+                        items: 2
+                    },
+                    1000: {
+                        items: 3
+                    }
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
