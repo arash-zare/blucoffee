@@ -85,17 +85,21 @@ http://localhost:3000
 3. **Prometheus** را انتخاب کنید.
 4. در قسمت `URL` مقدار زیر را وارد کنید:
    ```
-http://victoriametrics:8428
+   http://victoriametrics:8428
+
    ```
+
 5. روی **Save & Test** کلیک کنید.
 
-### ۳. ایمپورت کردن داشبوردهای آماده
+
+### ۳. ایمپورت کردن داشبوردهای آ
+ماده
 1. به **Manage Dashboards** در Grafana بروید.
 2. روی **Import** کلیک کنید.
 3. یک **Dashboard ** معتبر را وارد کنید یا فایل JSON داشبورد موردنظر را آپلود کنید.
 4. Data Source را روی **Prometheus** تنظیم کرده و Import را بزنید.
 
----
+
 
 ## 🔧 مدیریت سرویس‌ها
 
